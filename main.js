@@ -2,7 +2,7 @@ const mason_audio = new Audio("mason.mp3");
 
 window.onload = function site_load() {
   play_mason()
-  timed_crash(2000)
+  timed_crash(500)
 }
 
 function play_mason() {
