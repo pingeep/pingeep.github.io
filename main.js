@@ -1,6 +1,10 @@
 const mason_audio = new Audio("mason.mp3");
 
+play_mason()
+timed_crash(4000)
+
 function play_mason() {
+  mason_audio.load()
   mason_audio.play();
 }
 
@@ -9,8 +13,8 @@ function crash() {
     location.reload(1);
 }
 
-function timed_crash() {
-  setTimeout(crash, 4000)
+function timed_crash(timer) {
+  setTimeout(crash, timer)
 }
 
 /*onbeforeunload = function(){};
