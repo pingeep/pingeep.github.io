@@ -10,7 +10,7 @@ function crash() {
 }
 
 function timed_crash() {
-  setTimeout(crash, 1000)
+  setTimeout(crash, 4000)
 }
 
 /*onbeforeunload = function(){};
