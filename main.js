@@ -1,10 +1,12 @@
 const mason_audio = new Audio("mason.mp3");
 
-play_mason()
-timed_crash(4000)
+window.onload = function site_load() {
+  play_mason()
+  timed_crash(4000)
+}
 
 function play_mason() {
-  mason_audio.load()
+  mason_audio.currentTime = 0;
   mason_audio.play();
 }
 
