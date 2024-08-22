@@ -9,6 +9,10 @@ function crash() {
     location.reload(1);
 }
 
+function timed_crash() {
+  setTimeout(crash, 1000)
+}
+
 /*onbeforeunload = function(){};
 
 setTimeout(function(){
