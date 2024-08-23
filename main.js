@@ -6,7 +6,7 @@ document.onclick = function user_click() {
 }
 
 window.onbeforeunload = function user_leave() {
-  return "bart bart bart bart bart bart bart";
+  crash();
 }
 
 function crash() {
