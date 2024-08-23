@@ -1,4 +1,11 @@
-img {
-    height:100vh;
-    object-fit:fill;
+html {
+    margin:0;
+    padding:0;  
 }
+
+.fill {
+    cursor: grab;
+    height:100vh;
+    width:100vw;
+  }
+

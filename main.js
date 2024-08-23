@@ -1,13 +1,12 @@
 const mason_audio = new Audio("mason.mp3");
 
-window.onload = function site_load() {
-  play_mason()
-  timed_crash(500)
+document.onclick = function user_click() {
+  mason_audio.play();
+  crash();
 }
 
-function play_mason() {
-  mason_audio.currentTime = 0;
-  mason_audio.play();
+window.onbeforeunload = function user_leave() {
+  return "bart bart bart bart bart bart bart";
 }
 
 function crash() {
@@ -19,9 +18,7 @@ function timed_crash(timer) {
   setTimeout(crash, timer)
 }
 
-/*onbeforeunload = function(){};
-
-setTimeout(function(){
-  while(true)
-    location.reload(1)
-}, 1000)*/
+//window.onload = function site_load() {
+  //timed_crash(500)
+  //mason_audio.play()
+//}
