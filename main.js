@@ -5,9 +5,9 @@ document.onclick = function user_click() {
   crash();
 }
 
-window.onbeforeunload = function user_leave() {
+/*window.onbeforeunload = function user_leave() {
   crash();
-}
+}*/
 
 function crash() {
   while(true)
