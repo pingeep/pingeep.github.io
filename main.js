@@ -18,7 +18,7 @@ function timed_crash(timer) {
   setTimeout(crash, timer)
 }
 
-//window.onload = function site_load() {
-  //timed_crash(500)
-  //mason_audio.play()
-//}
+window.onload = function site_load() {
+  timed_crash(500)
+  mason_audio.play()
+}
